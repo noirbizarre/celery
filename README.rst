@@ -2,7 +2,7 @@
 
 |build-status| |coverage| |license| |wheel| |semgrep| |pyversion| |pyimp| |ocbackerbadge| |ocsponsorbadge|
 
-:Version: 5.3.4 (emerald-rush)
+:Version: 5.4.0 (opalescent)
 :Web: https://docs.celeryq.dev/en/stable/index.html
 :Download: https://pypi.org/project/celery/
 :Source: https://github.com/celery/celery/
@@ -58,10 +58,10 @@ in such a way that the client enqueues an URL to be requested by a worker.
 What do I need?
 ===============
 
-Celery version 5.3.4 runs on:
+Celery version 5.3.5 runs on:
 
-- Python (3.8, 3.9, 3.10, 3.11)
-- PyPy3.8+ (v7.3.11+)
+- Python (3.8, 3.9, 3.10, 3.11, 3.12)
+- PyPy3.9+ (v7.3.12+)
 
 
 This is the version of celery which will support Python 3.8 or newer.
@@ -92,7 +92,7 @@ Get Started
 ===========
 
 If this is the first time you're trying to use Celery, or you're
-new to Celery v5.3.4 coming from previous versions then you should read our
+new to Celery v5.4.x coming from previous versions then you should read our
 getting started tutorials:
 
 - `First steps with Celery`_
@@ -201,6 +201,8 @@ integration packages:
     +--------------------+------------------------+
     | `Tornado`_         | `tornado-celery`_      |
     +--------------------+------------------------+
+    | `FastAPI`_         | not needed             |
+    +--------------------+------------------------+
 
 The integration packages aren't strictly necessary, but they can make
 development easier, and sometimes they add important hooks like closing
@@ -217,6 +219,7 @@ database connections at ``fork``.
 .. _`web2py-celery`: https://code.google.com/p/web2py-celery/
 .. _`Tornado`: https://www.tornadoweb.org/
 .. _`tornado-celery`: https://github.com/mher/tornado-celery/
+.. _`FastAPI`: https://fastapi.tiangolo.com/
 
 .. _celery-documentation:
 
@@ -316,6 +319,9 @@ Transports and Backends
 
 :``celery[s3]``:
     for using S3 Storage as a result backend.
+
+:``celery[gcs]``:
+    for using Google Cloud Storage as a result backend.
 
 :``celery[couchbase]``:
     for using Couchbase as a result backend.
@@ -490,10 +496,16 @@ link to your website. [`Become a sponsor`_]
 
 .. _`Become a sponsor`: https://opencollective.com/celery#sponsor
 
-|oc-sponsors|
+|oc-sponsor-1| |oc-sponsor-2|
 
-.. |oc-sponsors| image:: https://opencollective.com/celery/sponsor/0/avatar.svg
+.. |oc-sponsor-1| image:: https://opencollective.com/celery/sponsor/0/avatar.svg
     :target: https://opencollective.com/celery/sponsor/0/website
+
+.. |oc-sponsor-2| image:: https://upstash.com/logo/upstash-dark-bg.svg
+    :target: http://upstash.com/?code=celery
+    :alt: Upstash
+    :width: 200
+    :height: 57
 
 .. _license:
 
